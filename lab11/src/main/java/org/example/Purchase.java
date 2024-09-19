@@ -51,4 +51,9 @@ public class Purchase {
     public void setPurchasePrice(double purchasePrice) {
         this.purchasePrice = purchasePrice;
     }
+
+    @Override
+    public String toString() {
+        return "\n[Продукт: " + product.getTitle() + "; Цена: " + purchasePrice + "]";
+    }
 }

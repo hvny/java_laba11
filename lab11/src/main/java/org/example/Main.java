@@ -45,9 +45,7 @@ public class Main {
                 .setParameter("name", name)
                 .getResultList();
         System.out.println("Список товаров покупателя " + name + ":");
-        for (Purchase purchase : purchases) {
-            System.out.println(purchase.getProduct().getTitle() + " - " + purchase.getPurchasePrice());
-        }
+        System.out.println(purchases.toString());
     }
 
     public static void findPersonsByProductTitle(String title) {
