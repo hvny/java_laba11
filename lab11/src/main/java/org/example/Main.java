@@ -73,6 +73,7 @@ public class Main {
         }
 
         transaction.commit();
+        System.out.println("Покупатель " + name + " удалён из таблицы");
     }
 
     public static void removeProduct(String title) {
@@ -87,6 +88,7 @@ public class Main {
         }
 
         transaction.commit();
+        System.out.println("Продукт " + title + " удалён из таблицы");
     }
 
     public static void buy(String customerName, String productTitle) {
