@@ -1,0 +1,14 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/java_db11</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">8631</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL94Dialect</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <mapping class="org.example.Customer"/>
+        <mapping class="org.example.Product"/>
+        <mapping class="org.example.Purchase"/>
+    </session-factory>
+</hibernate-configuration>
