@@ -30,6 +30,6 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "\n[Покупатель: " + this.getName() + "]\n";
+        return "\n[Покупатель: " + this.getName() + "]";
     }
 }
